@@ -18,6 +18,11 @@ const connect = function () {
   
       console.log(data)
     })
+    conn.on ("connect" ,()=>{
+      console.log("we connected :D")
+      conn.write ("Name: Lui")
+
+    })
     return conn;
 };
 
