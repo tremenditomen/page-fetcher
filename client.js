@@ -21,7 +21,7 @@ const connect = function () {
     conn.on ("connect" ,()=>{
       console.log("we connected :D")
       conn.write ("Name: Lui")
-
+      // conn.write( "Move: up" )
     })
     return conn;
 };
