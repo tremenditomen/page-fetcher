@@ -1,5 +1,5 @@
 const net = require("net");
-const { myNumber, myString, myFunction } = require("./client");
+const { myNumber, myString, myFunction, connect } = require("./client");
 const { setupInput,handleUserInput} =require ("./input")
 // establishes a connection with the game server
 // const setupInput = function () {
@@ -36,5 +36,5 @@ const { setupInput,handleUserInput} =require ("./input")
 
 // console.log("Connecting ...");
 // connect();
-
-setupInput()
+const conn= connect()
+setupInput(conn)

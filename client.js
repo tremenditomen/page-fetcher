@@ -1,5 +1,6 @@
 
 const net = require("net");
+const { IP, PORT } = require("./constants");
 
 const myNumber = 42;
 const myString = "hello";
@@ -8,8 +9,8 @@ const myFunction = () => {
 };
 const connect = function () {
     const conn = net.createConnection({
-      host: '135.23.223.133',
-      port: 50542
+      host: IP,
+      port: PORT
     });
   
     // interpret incoming data as text
@@ -27,5 +28,5 @@ const connect = function () {
 };
 
 console.log("Connecting ...");
-connect();
-  module.exports = {myNumber, myString, myFunction}
+
+  module.exports = {myNumber, myString, myFunction ,connect}
