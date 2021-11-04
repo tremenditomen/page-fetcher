@@ -16,7 +16,7 @@ const handleUserInput = function (data) {
     process.exit();
   }
   if (data === "l") {
-    connection.write("Say: I am snake");
+    connection.write("Say: I am GIRFFE");
   }
   if (data === "w") {
     connection.write("Move: up");
