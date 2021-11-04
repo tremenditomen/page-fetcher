@@ -1,2 +1,1 @@
 # snake-client
-# page-fetcher
